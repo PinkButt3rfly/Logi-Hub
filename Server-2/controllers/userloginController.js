@@ -47,4 +47,10 @@ const loginUser = async (req, res) => {
   }
 };
 
-module.exports = { createUser, loginUser };
+
+const getUsers = async (req, res) => {
+  const allUsers = await user.find({})
+  return res.json({ users: allUsers});
+}
+
+module.exports = { createUser, loginUser, getUsers };
