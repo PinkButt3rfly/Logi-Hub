@@ -1,0 +1,79 @@
+.custom-container {
+    display: flex;
+    justify-content: center;
+    
+    background: linear-gradient(to bottom, rgba(2, 3, 52, 0.543), rgba(2, 3, 52, 0.425)),
+    url('../images/image-cover.jpeg') no-repeat;
+    background-size: cover;
+    padding-top: 15rem;
+    height: 39.6rem;
+    position: relative;
+    margin-top: -5rem;
+    z-index: 10;
+    
+  }
+  
+  .home .content {
+    width: 100%;
+    height: 100%;
+    top: 14.3rem;
+    left: 24.3rem;
+    gap: 2rem;
+    opacity: 0rem;
+    
+  }
+  
+  .content {
+    line-height: 2;
+  }
+  
+  .content .btn {
+    color: white;
+  }
+  
+  .content .btn:hover {
+    background-color: white;
+    color: #0077b6;
+  }
+  
+  
+  .home .content h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: center;
+  
+  }
+  
+  .home .content p {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 16px;
+    line-height: 17.6px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .home .content a {
+    border: none;
+    border-radius: 30px;
+    margin: 16px 0;
+    padding: 16px 32px;
+    background-color: #0077b6;
+    align-items: right;
+  }
+
+
+  .custom-container1 {
+    padding: 10px 15px;
+    background: linear-gradient(to bottom, rgba(245, 245, 255, 1), rgba(245, 245, 255, 1))
+  }
+  
+  .custom-container1 img {
+    width: 236px;
+    height: 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+  }
+  

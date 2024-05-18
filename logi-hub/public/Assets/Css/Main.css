@@ -1,0 +1,193 @@
+.custom-container2 .open-box {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-container2 h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 55.78px;
+  }
+  
+  .custom-container2 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.8px;
+  }
+  
+  .custom-container2 p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: grey;
+  }
+  
+  .custom-container2 .btn {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 12px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 16px;
+    line-height: 18.88px;
+    gap: 8.58px;
+    margin-top: 20px;
+  }
+  
+  .custom-container2 .btn:hover {
+    background-color: white;
+    color: #0077b6;
+  }
+
+
+  .custom-container3 {
+    background: linear-gradient(to bottom, rgba(245, 245, 255, 1), rgba(245, 245, 255, 1));
+    text-align: center;
+  }
+  
+  .custom-container3 .open-box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  
+  .custom-container3 h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 19.8px;
+  }
+  
+  .custom-container3 p {
+    margin-top: 15px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: grey;
+  }
+
+
+  .custom-container4 {
+    background-color: rgba(12, 21, 52, 1);
+    border-radius: 40px;
+  }
+  
+  .custom-container4 h1 {
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-left: 100px;
+    line-height: 52.8px;
+    color: white;
+   
+  }
+  
+  .custom-container4 p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 100px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.78);
+  }
+  
+  
+  .img-del {
+    width: 100%;
+    height: 100%;
+    border-radius: 90px;
+    padding: 50px;
+  }
+  
+  .custom-container4 .btn {
+    border: none;
+    border-radius: 30px;
+    padding: 16px 16px;
+    margin-left: 100px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 16px;
+    line-height: 18.88px;
+    gap: 8.58px;
+    margin-top: 20px;
+  }
+  
+  .custom-container4 .btn:hover {
+    background-color: white;
+    color: #0077b6;
+  }
+  
+  
+  
+  /* Custom container 5*/
+  
+  .custom-container5 {
+    background: url('../Images/map-image.jpeg') no-repeat;
+    background-size: cover;
+  }
+  
+  
+  .custom-container5 h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52.8px;
+    color: rgba(12, 21, 52, 1);
+    margin-left: 30px;
+    padding-top: 40px;
+  }
+  
+  .custom-container5 .about p {
+    margin-left: 30px;
+  }
+  
+  
+  .card-img-top-main {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  
+  .custom-container5 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(100, 100, 100, 1);
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  
+  .custom-container5 h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(100, 100, 100, 1);
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-bottom: 0;
+  }
+  
+  .custom-container5 .p2 {
+    margin-top: 0;
+  }
+  
+  .custom-card1 {
+    width: 100%;
+    height: 100%;
+    margin-top:  20px;
+    margin-left: 10px;
+  }
+  
+  .custom-card1 .btn {
+    margin-left: 20px;
+    color: rgba(100, 100, 100, 1);
+  }
+  
+  
+  
+  
+  
+  

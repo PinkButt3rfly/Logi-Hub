@@ -1,0 +1,51 @@
+.custom-container6 {
+    background-color: rgba(12, 21, 52, 1);
+    background-size: contain;
+  }
+  
+  .icons {
+    display: inline;
+    width: 33px;
+    height: 33px;
+    margin-top: 40px;
+    padding-left: 15px;
+    font-size: 24px;
+  }
+
+
+  .custom-container6 h2 {
+    font-size: 32px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  
+  .custom1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding-top: 50px;
+  }
+  
+  .custom2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .custom-container6  a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  .break {
+      color:  white;
+      line-height: 2px;
+  }
+  
+  .footer {
+      color: white;
+      padding-left: 20px;
+  }
+  
+  

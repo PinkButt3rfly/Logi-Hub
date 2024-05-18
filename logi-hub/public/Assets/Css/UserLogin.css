@@ -1,0 +1,108 @@
+
+
+.custom-container-1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 21, 52, 1);
+    overflow: hidden; 
+}
+
+.custom-container-1 .lock  {
+    width: 691.9px;
+    height: 576.24px;
+    padding-top: 102px;
+}
+
+
+.form {
+position: absolute;
+width: 756px;
+height: 982px;
+left: 756px;
+top: 0px;
+
+}
+
+.form h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+    padding-top: 102px;
+}
+
+
+.form p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;   
+}
+
+
+ .icon-login {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    margin-right: 80px;
+    padding: 5px 5px;
+    border-radius: 3px; 
+}
+
+.form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-left: -20px;
+    
+    
+}
+
+.form input {
+    width: 380px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin-left: -20px;
+    background-color: rgba(240, 240, 240, 0.21);
+    
+  
+}
+
+.form .form-check-input {
+    width: 20px;
+    padding-top: -40px;
+}
+
+.span a {
+    padding-left: 120px;
+    text-decoration: none;
+    color: white;
+}
+
+.form1 .btn {
+    width: 380px;
+    border: none;
+    padding: 16px 32px;
+    background-color: #0077b6;
+    color: white;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.form1 .btn:hover {
+    background-color: white;
+    color: #0077b6;
+}
+
+.form .form2 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.form .form2 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0077b6;
+}
+
+

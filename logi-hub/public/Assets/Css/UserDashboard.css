@@ -1,0 +1,123 @@
+ /* Card 1&2 */
+
+ .custom-container-dash .custom-container-dash2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 640px;
+    height: 929px;
+    left: 1px;
+    top: 267px;
+    }
+
+    
+    
+    
+    .custom-container-dash {
+        padding-top: 120px;
+         
+    }
+    
+    .custom-container-dash .card {
+        border-radius: 30px;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .custom-container-dash  img {
+        width: 100%;
+        height: 60%;
+        border: none;
+        border-radius: 30px; 
+    }
+    
+    
+    .custom-container-dash h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 35.2px;
+        color: #020231;
+    }
+    
+    
+    .custom-container-dash p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17.6px;
+        color: #02023180;
+    }
+    
+    
+    .custom-container-dash .btn {
+        border: none;
+        border-radius: 30px;
+        padding: 16px 32px;
+        background-color: #0077b6;
+        color: white;
+    }
+    
+    
+    .custom-container-dash .btn:hover {
+        background-color: white;
+        color: #0077b6;
+    }
+
+
+    .custom-container-dash2 {
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    
+    
+    .custom-container-dash2 .card {
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .custom-container-dash2 img {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 30px; 
+    } 
+    
+    
+    .custom-container-dash2 h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 35.2px;
+        color: #020231;
+    }
+    
+    
+    .custom-container-dash2 p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17.6px;
+        color: #02023180;
+        
+    }
+    
+    
+    .custom-container-dash2 .btn {
+        border: none;
+        border-radius: 30px;
+        padding: 16px 32px;
+        background-color: #0077b6;
+        color: white;
+       
+    }
+    
+    
+    .custom-container-dash2 .btn:hover {
+        background-color: white;
+        color: #0077b6;
+    }
+    
+    
+    

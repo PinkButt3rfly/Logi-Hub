@@ -1,0 +1,119 @@
+* {
+    font-family: 'Poppins'sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+  }
+  
+  
+  .navbar {
+    
+      margin: auto;
+      float: none;
+      padding: 0;
+      z-index: 1000;
+     
+     
+  }
+
+  
+  .navbar-brand {
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    color: white;
+    pointer-events: none;
+    text-decoration: none;
+  }
+  
+  .navbar-brand span {
+    color: #0077b6;
+  }
+  
+  .navbar-nav {
+    font-size: 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: lightgrey;
+    margin-left:  0.8rem;
+    gap: 0.8rem;
+    margin: auto;
+  }
+  
+  .ml-auto {
+    display: flex;
+  }
+  
+  .nav-link {
+    font-weight: 1rem;
+    color: lightgrey;
+    padding: 0.8rem 0.2rem;
+  }
+  
+  
+  
+  .navbar a:hover {
+    background-color: #0077b6;
+    color: white;
+   
+  }
+  
+  
+  .ml-auto a:hover {
+    background-color: #0077b6;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.6rem 0.7rem;
+    
+  }
+  
+  .ml-auto .btn {
+    border: none;
+    border-radius: 1.8rem;
+    padding: .3rem 2rem;
+    background-color: #0077b6;
+    color: white;
+  }
+  
+  .ml-auto .btn:hover {
+    background-color: white;
+    color: #0077b6;
+  }
+  
+ 
+  
+
+
+
+
+
+  @media (max-width: 758px) {
+      .navbar-collapse {
+          background-color: #0077b6;
+          padding-left: 80px;
+          margin-top: 10px;
+          border-radius: 10px;
+      }
+
+      .navbar-collapse .ml-auto {
+          display: block;
+      }
+
+      .navbar-collapse .ml-auto .btn {
+          padding-left: 0px;
+      }
+
+      .navbar-toggler {
+          background-color: #0077b6;
+          color: #0077b6;
+          
+      }
+
+      .navbar-toggler-icon {
+          color: white;
+      }
+  }

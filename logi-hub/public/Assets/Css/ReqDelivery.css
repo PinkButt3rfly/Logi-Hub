@@ -1,0 +1,116 @@
+.progress-container {
+    margin-bottom: -40px;
+}
+
+  .progress-bar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0077B6;
+}
+
+.progress-line-container {
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 800px; /* adjust width to match circles */
+    margin: 10px auto; /* center horizontally */
+    background-color: #020231;
+}
+
+
+.progress-line {
+    width: 100%; /* adjust width as needed */
+    height: 2px;
+    background-color: #ddd;
+}
+
+.progress-line:first-child { /* style the second line */
+    margin-left: 100px; /* create a gap between circles */
+}
+
+.progress-circle.active ~ .progress-line { /* style line below active circle */
+    background-color: #00bcd4;
+}
+
+
+
+.progress-bar:first-child {
+    background-color: #F5F5FF;
+    
+}
+
+.progress-container {
+    padding-top: 200px;
+    padding-right: 100px;
+}
+
+    
+.form-label {
+    
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.6px;
+}
+  
+
+.form-tiltle {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 26.4px;
+}
+
+
+
+
+.form-control {
+    width: 430px;
+    background-color: #F5F5FF;
+    border: none;
+}
+
+
+
+
+
+.form-container-2 .form1 a {
+    width: 20px;
+    height: 12px;
+    color: #02023199;
+    text-decoration: none;
+}
+
+.form-container-2 .form1 a span {
+    width: 220px;
+    height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    font-style: italic;
+}
+
+
+
+.custom-container-req3 .btn {
+    width: 480px;
+    border: none;
+    padding: 16px 32px;
+    background-color: #0077b6;
+    color: white;
+    margin-top: 20px;
+    margin-left: 250px;
+    justify-content: center;
+    padding-top: 20px; 
+}
+
+.custom-container-req3 .btn:hover {
+    background-color: white;
+    color: #0077b6;
+  }
+
+
+
