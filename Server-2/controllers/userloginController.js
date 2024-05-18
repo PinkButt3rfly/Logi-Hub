@@ -1,7 +1,6 @@
 const user = require('../models/userloginModel');
 const jwt = require('jsonwebtoken')
-
-
+const bcrypt = require('bcryptjs');
 
 
 const createUser = async (req, res) => {
@@ -11,13 +10,11 @@ const createUser = async (req, res) => {
       password: password
     }
     try {
-      //const user = new User({ email, password });
-      //await user.save();
-      await user.insertMany(data).catch(error => {
+      const create_user = await user.create(data).catch(error => {
         console.log('Error creating user', error);
         
       }); 
-      res.json({ message: 'User created successfully' });
+      res.json({ message: 'User created successfully', user:create_user });
     } catch (error) {
       console.error('Error creating user:', error);
       res.json({ message: 'Internal server error' });
@@ -28,12 +25,9 @@ const createUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
-  console.log(email);
   
   try {
-    
     const getuser = await user.findOne({email:email});
-    console.log(getuser);
   
     if (!getuser) {
       return res.json({ message: 'Invalid email' });
@@ -42,9 +36,11 @@ const loginUser = async (req, res) => {
     if (!passwordMatch) {
       return res.json({ message: 'Invalid password' });
     }
+  
     const token = jwt.sign({ userId: getuser._id }, 'your-secret-key', { expiresIn: '1h' });
-    res.json({ token });
-    res.json({ message: 'Login succesful'})
+
+    res.json({ message: 'Success', token:token})
+
   } catch (error) {
     console.error('Login error:', error);
     res.json({ message: 'Internal server error' });
