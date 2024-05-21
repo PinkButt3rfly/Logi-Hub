@@ -11,7 +11,7 @@ const ReqConfirm = () => {
     const sendDataToServer = async () => {
             
             try {
-                await axios.post('http://localhost:3005/api/users/confirmation', { 
+                await axios.post('https://capstone-ij0t.onrender.com/api/users/confirmation', { 
                     name,
                     email,
                     phone,
