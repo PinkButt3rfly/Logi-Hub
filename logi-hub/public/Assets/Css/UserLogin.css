@@ -1,11 +1,11 @@
 
 
 .custom-container-1 {
-    position: fixed;
+  
     height: 100%;
     width: 100%;
     background-color: rgba(12, 21, 52, 1);
-    overflow: hidden; 
+    overflow: auto; 
 }
 
 .custom-container-1 .lock  {

@@ -1,10 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { checkAuthLoader } from './context/AuthContext';
+
 
 // Reusable Components
 
-import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 
 //Routes Pages
+//import ProtectedRoute from './components/ProtectedRoute';
 
 import Home from './components/pages';
 import { SplitScreen } from './components/pages/SplitScreen';
@@ -15,22 +18,34 @@ import { ReqConfirm } from './components/pages/Confirmation';
 import { PaymentDev } from './components/pages/Payment';
 
 
+const router = createBrowserRouter([
+  { path: '/', element: <Home /> },
+  { path: '/splitscreen', element: <SplitScreen /> },
+  { path: '/login', element: <UserLogin /> },
+  { path: '/dashboard', element: <UserDashboard /> },
+  { path: '/requestdelivery', element: <ReqDelivery /> },
+  { path: '/payment', element: <PaymentDev /> },
+  { path: '/Confirmation', element: <ReqConfirm /> },
+
+]);
 
 
 function App() {
   return (
-  
-    <Router>
+   
+    <RouterProvider router={router} />
+
+    /* <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/splitscreen" element={<SplitScreen />} />
         <Route path="/login" element={<UserLogin />} />
-        <Route path="/dashboard" element={<UserDashboard />} />
+        <Route path="/dashboard" element={<UserDashboard />} loader={checkAuthLoader} />
         <Route path="/requestdelivery" element={<ReqDelivery />} />
         <Route path="/payment" element={<PaymentDev />} />
         <Route path="/confirmation" element={<ReqConfirm />} />
       </Routes>
-    </Router>
+   </Router> */
+
   );
 }
 

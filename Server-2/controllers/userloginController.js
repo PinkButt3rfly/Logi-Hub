@@ -1,4 +1,5 @@
 const user = require('../models/userloginModel');
+const delivery = require('../models/deliveryModel');
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs');
 
@@ -53,4 +54,30 @@ const getUsers = async (req, res) => {
   return res.json({ users: allUsers});
 }
 
-module.exports = { createUser, loginUser, getUsers };
+const confirmDel = async(req, res) => {
+  const { name, email, phone, address, category, rename, phn, pua, time } = req.body;
+    data = {
+      name: name,
+      email: email,
+      phone: phone,
+      address: address,
+      category: category,
+      rename: rename,
+      phn: phn,
+      pua: pua,
+      time: time
+    }
+    try {
+      const create_delivery = await delivery.create(data).catch(error => {
+        console.log('Error creating Delivery', error);
+        
+      }); 
+      res.json({ message: 'Delivery Created successfully', delivery:create_delivery });
+    } catch (error) {
+      console.error('Error creating Delivery:', error);
+      res.json({ message: 'Internal server error' });
+    
+  } 
+}
+
+module.exports = { createUser, loginUser, getUsers, confirmDel };

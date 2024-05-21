@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import axios from "axios"
-import { Link, useNavigate } from 'react-router-dom';
+//import { useAuth } from '../context/AuthContext';
+
+import { useNavigate } from 'react-router-dom';
 
 
 function UserLogin() {
@@ -9,6 +11,9 @@ function UserLogin() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    //onst { saveToken } = useAuth();
+
 
     async function submit(e){
         e.preventDefault();
@@ -19,6 +24,7 @@ function UserLogin() {
             })
             .then(res=>{
                 if(res.data['message']==="Success"){
+                // saveToken(res.data['token']);
                   history('/dashboard');
                 }else{
                   alert("wrong details")
@@ -26,7 +32,7 @@ function UserLogin() {
                
             })
             .catch(e=>{
-                alert("wrong details")
+                alert("something went wrong")
                 console.log(e)
             })
         }

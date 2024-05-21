@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios'
+import {useLocation} from 'react-router-dom';
+import Modal from 'react-modal';
+
 
 const ReqConfirm = () => {
+    const finaldata = useLocation();
+    const { name, email, phone, address, category, rename, phn, pua, time } = finaldata.state || {};
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const sendDataToServer = async () => {
+            
+            try {
+                await axios.post('http://localhost:3005/api/users/confirmation', { 
+                    name,
+                    email,
+                    phone,
+                    address,
+                    category,
+                    rename,
+                    phn,
+                    pua,
+                    time,
+                });
+                console.log('Data submitted successfully');
+                setModalIsOpen(true); // Open modal after data submission
+            } catch (error) {
+                console.error('There was an error submitting the data', error);
+            }
+        };
+
   return (
-      <>
+      
     <div>
+        
       <div className="container-fluid custom-container-confirm">
         <div className="progress-container">
             <div className="row">
@@ -44,8 +73,8 @@ const ReqConfirm = () => {
  
                 <div className="col-md-4">
                     <div className="methods">
-                        <p className="main" style={{ fontsize: '12px' }}>Magic Land, No.1, Kukwaba Hills, Constitution Ave, Wuye, Abuja</p>
-                        <p className="main" style={{ fontsize: '12px' }}>Jabi Lake Mall, Bala Sokoto Way, Jabi 900108, Abuja</p>
+                        <p className="main" style={{ fontsize: '12px' }}>{address}</p>
+                        <p className="main" style={{ fontsize: '12px' }}>{pua}</p>
                     
                         <h3 className="h3" style={{ fontsize: '14px', color: '#020231' }}>Gokada</h3>
                         <p  className="p"style={{ fontsize: '10px', color: '#02023199' }}>35km . 20min <span>N1700</span></p>
@@ -60,7 +89,7 @@ const ReqConfirm = () => {
 
 
             
-            <a href="#" style={{ backgroundcolor: '#0077B6', color: '#ffff',  justifycontent: 'center' }} className="btn" id="myBtn">Proceed</a>
+            <a href="#" onClick={sendDataToServer} style={{ backgroundcolor: '#0077B6', color: '#ffff',  justifycontent: 'center' }} className="btn" id="myBtn">Proceed</a>
 
 
             <div id="myModal" className="modal">
@@ -104,8 +133,18 @@ const ReqConfirm = () => {
     </div>
 
     </div>
+          {/* Confirmation Modal */}
+          <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        contentLabel="Form Submission Confirmation"
+      >
+        <h2>Delivery Confirmed</h2>
+        <p>Your Delivery was submitted successfully.</p>
+        <button onClick={() => setModalIsOpen(false)}>Close</button>
+      </Modal>
     </div>
-    </>
+   
   )
 }
 

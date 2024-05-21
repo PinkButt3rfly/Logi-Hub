@@ -11,7 +11,7 @@ const Cover = () => {
                           <h1>The one-stop hub for<br/> everything Logistics</h1>
                           <p>Best Prices. Seamless Experience. Multiple Service Option.</p>
 
-                          <a href="#" className="btn">Send Delivery Request Now</a>
+                          <a href="/requestdelivery" className="btn">Send Delivery Request Now</a>
                       </div>
                   </div>
                 </div>

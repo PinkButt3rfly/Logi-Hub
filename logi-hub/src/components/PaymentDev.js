@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 
 const PaymentDev = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const [additionalData, setAdditionalData] = useState('');
+    const formData = location.state || {};
+
+    const handleAdditionalChange = (e) => {
+        setAdditionalData(e.target.value);
+      };
+    
+
+    const handleProceed = (e) => {
+        e.preventDefault();
+        const updatedData = { ...formData, additionalData };
+        navigate('/confirmation', { state: updatedData });
+        
+
+    };
+
   return (
       <>
     <div>
@@ -46,8 +65,8 @@ const PaymentDev = () => {
 
                 <div class="col-md-4">
                     <div className="methods">
-                        <p className="main" style={{ fontSize: '12px' }}>Magic Land, No.1, Kukwaba Hills, Constitution Ave, Wuye, Abuja</p>
-                        <p className="main" style={{ fontSize: '12px' }}>Jabi Lake Mall, Bala Sokoto Way, Jabi 900108, Abuja</p>
+                        <p className="main" style={{ fontSize: '12px' }}> { formData.address } </p>
+                        <p className="main" style={{ fontSize: '12px' }}> { formData.pua } </p>
                     
                         <h3 className="h3" style={{ fontSize: '14px', color: '#020231' }}>Gokada</h3>
                         <p className="p"   style={{ fontSize: '10px', color: '#02023199' }}>35km . 20min <span>N1700</span></p>
@@ -62,6 +81,9 @@ const PaymentDev = () => {
                 </div>
 
                 <div className="col-md-4">
+                    <form>
+                    <input type="hidden" value="Cash on Delivery" name="paymentm" onChange={handleAdditionalChange} />
+                    </form>
             <div className="form-container">
                 <h2 style={{fontSize: '16px'}}>Payment Method</h2>
                 <hr/>
@@ -70,7 +92,7 @@ const PaymentDev = () => {
                 <a className="payment" href="#"><img  className="img" src="../Assets/icons/cash.svg"/> Cash Payment</a>
             </div>
                 
-                    <a href="#" style={{backgroundColor: '#0077B6', color: '#ffff',  justifyContent: 'center'}} className="btn">Proceed</a>
+                    <a href="#" onClick={handleProceed} style={{backgroundColor: '#0077B6', color: '#ffff',  justifyContent: 'center'}} className="btn">Proceed</a>
                 
                 
             </div>

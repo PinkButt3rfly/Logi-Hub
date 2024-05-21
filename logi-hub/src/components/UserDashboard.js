@@ -1,13 +1,54 @@
+
 import React from 'react';
+//import { useAuth } from '../context/AuthContext';
+
 import Navbar from './Navbar';
 import Footer from './Footer';
-import {useLocation} from 'react-router-dom';
+
 
 const UserDashboard = () => {
+  
   return (
       <>
 <div>
-    <Navbar />
+    
+    <div className="container-fluid-md" >
+        <nav className="navbar navbar-expand-sm">
+            <div className="container-fluid">
+    
+                <a href="#" className="navbar-brand navbar-brand-custom">Logi<span>Hub</span></a>
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="myNavbar">
+
+                    <ul className="navbar-nav me-auto">
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-custom" href="/">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-custom" href="/splitscreen">Become a Vendor</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-custom" href="#">Support</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link nav-link-custom" href="#">About</a>
+                        </li>
+                    </ul>
+                
+
+                    <div className="log">
+                        <a href="#"><img src="../Assets/images/young-african-american-woman-toothy-smiling.jpg"/></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
     <div class="container-md custom-container-dash">
         <div className="row">
             <div className="col-md-6">
@@ -24,7 +65,7 @@ const UserDashboard = () => {
                             Tellus ac feugiat nisl curabitur placerat. Quam ac non, sed et. Bibendum laoreet aliquam habitant dui commodo, rhoncus, risus. 
                             Metus eu vestibulum scelerisque dignissim sem vulputate lorem fames in. Donec nunc at eget a massa. 
                         </p>
-                        <a href="#" className="btn">Request Parcel Delivery</a>
+                        <a href="/requestdelivery" className="btn">Request Parcel Delivery</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +85,7 @@ const UserDashboard = () => {
                             Tellus ac feugiat nisl curabitur placerat. Quam ac non, sed et. Bibendum laoreet aliquam habitant dui commodo, rhoncus, risus. 
                             Metus eu vestibulum scelerisque dignissim sem vulputate lorem fames in. Donec nunc at eget a massa. 
                         </p>
-                        <a href="#" className="btn">Request Parcel Delivery</a>
+                        <a href="/requestdelivery" className="btn">Request Parcel Delivery</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +112,7 @@ const UserDashboard = () => {
                             Tellus ac feugiat nisl curabitur placerat. Quam ac non, sed et. Bibendum laoreet aliquam habitant dui commodo, rhoncus, risus. 
                             Metus eu vestibulum scelerisque dignissim sem vulputate lorem fames in. Donec nunc at eget a massa. 
                         </p>
-                        <a href="#" className="btn">Request Parcel Delivery</a>
+                        <a href="/requestdelivery" className="btn">Request Parcel Delivery</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +132,7 @@ const UserDashboard = () => {
                             Tellus ac feugiat nisl curabitur placerat. Quam ac non, sed et. Bibendum laoreet aliquam habitant dui commodo, rhoncus, risus. 
                             Metus eu vestibulum scelerisque dignissim sem vulputate lorem fames in. Donec nunc at eget a massa. 
                         </p>
-                        <a href="#" className="btn">Request Parcel Delivery</a>
+                        <a href="/requestdelivery" className="btn">Request Parcel Delivery</a>
                     </div>
                 </div>
             </div>

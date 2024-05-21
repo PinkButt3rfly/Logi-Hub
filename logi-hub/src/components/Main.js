@@ -3,6 +3,7 @@ import React from 'react'
 
 const Main = () => {
   return (
+    //<div></div>
     <div>
         <div className="container-md custom-container2 my-5">
             <div className="row gx-5">
@@ -21,7 +22,7 @@ const Main = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                     <div className="#">
-                        <a href="#" class="btn">Request Delivery Now</a>
+                        <a href="/requestdelivery" class="btn">Request Delivery Now</a>
                     </div>
 
                 </div>
@@ -94,7 +95,7 @@ const Main = () => {
                     </p>
 
                     <div className="#">
-                        <a href="#" className="btn">Become a Vendor</a>
+                        <a href="/splitscreen" className="btn">Become a Vendor</a>
                     </div>
                 </div>
           
