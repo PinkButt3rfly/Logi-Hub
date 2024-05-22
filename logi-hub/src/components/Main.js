@@ -100,7 +100,7 @@ const Main = () => {
                 </div>
           
                 <div className="col-md-4">
-                    <img src="../Assets/Images/bikeguy.jpeg" class="img-del img-fluid" alt="miumiu"/>
+                    <img src="../Assets/images/bikeguy.jpeg" className="img-del img-fluid" alt="miumiu"/>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@ const Main = () => {
 
 
         <div className="container-md custom-container5 my-5">
-            <div class="about">
+            <div className="about">
                 <h1>What our clients say about us!</h1>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et arcu aliquet porta dignissim est. 
@@ -120,7 +120,7 @@ const Main = () => {
             <div className="row my-5">
                 <div className="col-md-4">
                     <div className="card">
-                        <img className="card-img-top-main" src="../Assets/Images/client1.jpeg" alt="Card image"/>
+                        <img className="card-img-top-main" src="../Assets/images/client1.jpeg" alt="Card image"/>
                         <div className="card-body">
                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et arcu aliquet porta dignissim est. 
                                 Egestas malesuada laoreet tristique ut quis suspendisse.
@@ -133,7 +133,7 @@ const Main = () => {
 
                 <div className="col-md-4">
                     <div className="card">
-                        <img className="card-img-top-main" src="../Assets/Images/client2.jpeg" alt="Card image"/>
+                        <img className="card-img-top-main" src="../Assets/images/client2.jpeg" alt="Card image"/>
                         <div className="card-body">
                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et arcu aliquet porta dignissim est. 
                                 Egestas malesuada laoreet tristique ut quis suspendisse.
@@ -147,7 +147,7 @@ const Main = () => {
 
                 <div className="col-md-4">
                     <div className="card custom-card1">
-                        <img className="card-img-top-main" src="../Assets/Images/client3.jpeg" alt="Card image"/>
+                        <img className="card-img-top-main" src="../Assets/images/client3.jpeg" alt="Card image"/>
                         <div className="card-body">
                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et arcu aliquet porta dignissim est. 
                                 Egestas malesuada laoreet tristique ut quis suspendisse.
