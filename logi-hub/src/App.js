@@ -47,9 +47,9 @@ function App() {
         <Route path="/payment" element={<PaymentDev />} />
         <Route path="/confirmation" element={<ReqConfirm />} />
       </Routes>
-   </Router> 
+   </Router> */
 
-  );*/
+  );
 }
 
 export default App;
