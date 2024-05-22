@@ -5,7 +5,10 @@ import { checkAuthLoader } from './context/AuthContext';
 
 // Reusable Components
 
-
+//const root = ReactDOM.createRoot(document.getElementById(root));
+//root.render(
+  //<HashRouter>
+  
 //Routes Pages
 //import ProtectedRoute from './components/ProtectedRoute';
 
@@ -18,7 +21,7 @@ import { ReqConfirm } from './components/pages/Confirmation';
 import { PaymentDev } from './components/pages/Payment';
 
 
-const router = createBrowserRouter([
+/*const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/splitscreen', element: <SplitScreen /> },
   { path: '/login', element: <UserLogin /> },
@@ -27,15 +30,15 @@ const router = createBrowserRouter([
   { path: '/payment', element: <PaymentDev /> },
   { path: '/Confirmation', element: <ReqConfirm /> },
 
-]);
+]);*/
 
 
 function App() {
   return (
    
-    <RouterProvider router={router} />
+   // <RouterProvider router={router} />
 
-    /* <Router>
+     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<UserLogin />} />
@@ -44,7 +47,7 @@ function App() {
         <Route path="/payment" element={<PaymentDev />} />
         <Route path="/confirmation" element={<ReqConfirm />} />
       </Routes>
-   </Router> */
+   </Router> 
 
   );
 }
